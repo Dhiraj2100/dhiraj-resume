@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+        <script>
+            window.onload = function () {
+              if (/Mobi/.test(navigator.userAgent)) {
+                var prompted = sessionStorage.getItem("prompted");
+                if (!prompted) {
+                  var confirmDesktop = confirm("Please set desktop site for better experience.");
+                  if (confirmDesktop) {
+                    sessionStorage.setItem("prompted", "true");
+                  }
+                }
+              }
+            }
+          </script>
+</head>
+
+<body>
+    <!-- <header>
+        <nav>
+            <div class="left">Niranjan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                    <i class="fa-solid fa-circle-xmark icon"></i>
+                </ul>
+                <i class="fa-solid fa-bars icon"></i>
+            </div>
+        </nav>
+    </header> -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/dd.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, I am <span class="name">Dhiraj</span>
+                <div>I am a passionate</div>
+                <!-- <div>Front-End Developer</div> -->
+                <span class="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="./images/dr.png" alt="">
+            </div>
+        </section>
+    </main>
+
+    <!---------- About section ------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/dl.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm Dhiraj Dalvi, Master of Computer Applications (MCA) student with A Web Development Portfolio is a carefully curated showcase of a developer's skills, projects, and expertise in creating websites and web applications. This digital portfolio serves as a powerful tool for demonstrating a developer's capabilities to potential clients, employers, or collaborators.
+
+                        The portfolio typically includes a variety of projects that highlight the developer's proficiency in different technologies and frameworks, such as HTML, CSS, JavaScript, React, or Angular. Each project is presented with detailed descriptions, screenshots, and links to live versions or repositories, illustrating the developer's problem-solving abilities and creativity.
+                        
+                        
+                        
+
+                        Let's connect and explore how we can create amazing web experiences together!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML/CSS/Java Script</span> <br>Front-End Web Development</li>
+                            <li><span>Java</span><br>Programming Language</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Fresher</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-current</span> <br>Masters's Of Computer Applications(MCA)</li>
+                            <li><span>2021-22</span><br>Bachelor's of Computer Applications(BCA) under Shivaji
+                                University, Kolhapur</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------- projects section------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <p>
+                A Car Rental Management System is a digital platform designed to simplify and enhance the operations of car rental businesses. This system facilitates the seamless management of vehicle reservations, customer information, billing, and fleet maintenance. It offers an intuitive interface for both customers and staff, enabling quick and efficient service.
+
+The system allows customers to browse available vehicles, compare rates, and make reservations online. It integrates with payment gateways for secure and hassle-free transactions. Additionally, it provides real-time updates on vehicle availability, ensuring customers can book their preferred cars without delays.
+
+For the rental company, the system streamlines administrative tasks such as tracking reservations, managing fleet inventory, and scheduling maintenance. It includes a robust database to store customer profiles, rental history, and vehicle information, ensuring data is organized and easily retrievable.
+
+Automated billing and invoicing reduce errors and enhance financial management. The system also generates reports on rental trends, fleet utilization, and revenue, providing valuable insights for decision-making.
+            </p>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+<!-- ---------------------------------contact--------------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>dhirajdalvi2105@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+91 9067124295</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/dhiraj-dalvi-497a80319?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BRpNV1wMnSB2UTn3Lir%2FSgg%3D%3D"></i></a>
+                    <a href="https://github.com/Dhiraj2100"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/invites/contact/?igsh=x0o16w54w0q&utm_content=22j4svf"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="Dhiraj resume.pdf" class="btn btn-2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                    <button type="submit" class="btn btn-2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+           
+        </div>
+    </div>
+
+</div>
+<div class="copyright">
+    <p>Copyright <i class="fa-regular fa-copyright"></i> Dhiraj. Made with <i class="fa-regular fa-heart"></i></p>
+</div>
+
+
+
+    <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> -->
+    <script src="./index.js"></script>
+
+
+
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwibgCJUcSA9RFNxr0ngyWfTSmxJmgYof73vPBYnwBhoSxTM7HrNZSDU7USrfS8U9G_/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },2000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
